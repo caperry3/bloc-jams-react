@@ -34,19 +34,11 @@ class Album extends Component {
           <tbody>
             {
               this.state.album.songs.map( (songList, index) =>
-<<<<<<< HEAD
-                <table>
-                  <td id="title">{songList.title}</td>
-                  <td id="duration">{songList.duration}</td>
-                  <td id="audioSrc">{songList.audioSrc}</td>
-                </table>
-=======
                   <tr>
                     <td id="title">{songList.title}</td>
                     <td id="duration">{songList.duration}</td>
                     <td id="audioSrc">{songList.audioSrc}</td>
                   </tr>
->>>>>>> album-checkpoint-assignment
               )
             }
           </tbody>
