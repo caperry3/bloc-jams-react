@@ -14,7 +14,6 @@ class Album extends Component {
     currentSong: album.songs[0],
     isPlaying: false,
     isHovering: false,
-    default: song.number
   };
 
   this.audioElement = document.createElement('audio');
@@ -54,29 +53,25 @@ class Album extends Component {
     this.setState({ isHovering: false})
   }
 
-  playPauseOrNumber(song) {
+  playPauseOrNumber(song, index) {
     const isHoveringSameSong = this.state.isHovering === song;
-    const currentSong = this.state.currentSong
+    const currentSong = this.state.currentSong;
     if (isHoveringSameSong) {
-      if (this.state.isPlaying && this.state.isHovering) {
+      if (this.state.isPlaying && this.state.currentSong === song) {
         return <span><i className="icon ion-md-pause"></i></span>
-      }
-      else (this.state.!isPlaying) {
+      } else {
         return <span><i className="icon ion-md-play"></i></span>
       }
     } else {
-        if (this.state.isPlaying) {
+        if (this.state.isPlaying && this.state.currentSong === song) {
           return <span><i className="icon ion-md-pause"></i></span>
-        }
-        if else (currentSong && this.state.!isPlaying) {
+        } else if (currentSong === song && !this.state.isPlaying) {
           return <span><i className="icon ion-md-play"></i></span>
+        } else {
+          return <span>{ index + 1 }</span>
         }
-        else return
     }
-
-
-
-
+    //draw out logic and think of ways to simplify^^^
     /*
     option 1: song is what is currently hovered
       -is this song currently playing -> show pause icon
@@ -109,7 +104,7 @@ class Album extends Component {
             {
               this.state.album.songs.map( (song, index) =>
                   <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
-                    <td id="number" onMouseEnter={() => this.onMouseEnter(song)} onMouseLeave={() => this.onMouseLeave()} >{ playPauseOrNumber() }</td>
+                    <td id="number" onMouseEnter={() => this.onMouseEnter(song)} onMouseLeave={() => this.onMouseLeave()} >{ this.playPauseOrNumber(song, index) }</td>
                     <td id="title">{song.title}</td>
                     <td id="duration">{song.duration}</td>
                   </tr>
