@@ -17,7 +17,7 @@ class Album extends Component {
     duration: album.songs[0].duration,
     isPlaying: false,
     isHovering: false,
-    volume: "75",
+    volume: "0.75",
   };
 
   this.audioElement = document.createElement('audio');
@@ -130,7 +130,7 @@ class Album extends Component {
 
   handleVolumeChange(e) {
     const newVolume = e.target.value;
-    this.state.volume = newVolume;
+    this.audioElement.volume = newVolume;
     this.setState({ volume: newVolume });
   }
 
