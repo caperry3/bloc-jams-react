@@ -128,6 +128,18 @@ class Album extends Component {
     this.setState({ currentTime: newTime });
   }
 
+  formatTime(originalSeconds) {
+    originalSeconds = this.audioElemnt.currentTime
+    if (originalSeconds) {
+      var minutes_sec = (originalSeconds / 60);
+      var seconds_full = (minutes_sec % 1) * 60;
+      var minutes = Math.floor(minutes_sec);
+      var seconds = Math.round(seconds_full);
+      return (minutes + ":" + seconds)
+    }
+    else return ("-:--")
+  }
+
   handleVolumeChange(e) {
     const newVolume = e.target.value;
     this.audioElement.volume = newVolume;
