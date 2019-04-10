@@ -129,7 +129,6 @@ class Album extends Component {
   }
 
   formatTime(originalSeconds) {
-    originalSeconds = this.audioElemnt.currentTime
     if (originalSeconds) {
       var minutes_sec = (originalSeconds / 60);
       var seconds_full = (minutes_sec % 1) * 60;
@@ -169,7 +168,7 @@ class Album extends Component {
                   <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
                     <td id="number" onMouseEnter={() => this.onMouseEnter(song)} onMouseLeave={() => this.onMouseLeave()} >{ this.playPauseOrNumber(song, index) }</td>
                     <td id="title">{song.title}</td>
-                    <td id="duration">{song.duration}</td>
+                    <td id="duration">{this.formatTime(song.duration)}</td>
                   </tr>
               )
             }
@@ -185,6 +184,7 @@ class Album extends Component {
           handlePrevClick={() => this.handlePrevClick()}
           handleNextClick={() => this.handleNextClick()}
           handleTimeChange={(e) => this.handleTimeChange(e)}
+          formatTime={(originalSeconds) => this.formatTime(originalSeconds)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
         />
       </section>
