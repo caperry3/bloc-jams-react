@@ -134,6 +134,9 @@ class Album extends Component {
       var seconds_full = (minutes_sec % 1) * 60;
       var minutes = Math.floor(minutes_sec);
       var seconds = Math.round(seconds_full);
+      if (seconds < 10) {
+        return (minutes + ":" + 0 + seconds)
+      }
       return (minutes + ":" + seconds)
     }
     else return ("-:--")
