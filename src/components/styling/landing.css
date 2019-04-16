@@ -1,0 +1,20 @@
+.landing {
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.muse-title {
+  font-size: 125px;
+}
+.muse {
+  text-align: center;
+  color: grey;
+}
+.definition {
+  text-align: center;
+  color: grey;
+}
