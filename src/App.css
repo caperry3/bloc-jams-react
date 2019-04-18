@@ -3,6 +3,14 @@
 }
 
 .nav-bar {
-  padding: 10px;
+  padding: 30px;
   text-align: left;
+}
+
+.main-page-link {
+  padding: 10px;
+}
+
+.choose-muse-link {
+  padding: 10px;
 }
