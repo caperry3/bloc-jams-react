@@ -3,7 +3,7 @@ export default [{
   artist: 'Mark Isham, Franz Liszt, and Jules Massenet',
   releaseInfo: 'Music for contemplation',
   albumCover: '/assets/images/album_covers/snow-haven.jpg',
-  slug: 'the-colors',
+  slug: 'contemplate',
   songs: [
       { title: 'A Really Good Cloak', duration: '209', audioSrc: '/assets/music/A-Really-Good-Cloak.m4a', number: 1 },
       { title: 'Lovedream', duration: '261', audioSrc: '/assets/music/Lovedream.m4a', number: 2 },
@@ -13,8 +13,8 @@ export default [{
     title: 'Experience',
     artist: 'M83',
     releaseInfo: 'Music to prompt experiential thinking',
-    albumCover: '/assets/images/album_covers/rust-bucket.jpg',
-    slug: 'the-telephone',
+    albumCover: '/assets/images/album_covers/betty.jpg',
+    slug: 'experience',
     songs: [
       { title: 'Another Wave from You', duration: '114', audioSrc: '/assets/music/Another-Wave-from-You.m4a', number: 1 },
       { title: 'Echoes of Mine', duration: '220', audioSrc: '/assets/music/Echoes-of-Mine.m4a', number: 2 },

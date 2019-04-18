@@ -9,14 +9,17 @@
 }
 .muse-title {
   font-size: 120px;
+  padding: 5px;
 }
 .muse {
-  text-align: center;
+  text-align: left;
   color: grey;
+  padding: 10px;
 }
 .definition {
-  text-align: center;
+  text-align: left;
   color: grey;
+  padding: 10px;
 }
 
 body {
