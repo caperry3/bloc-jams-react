@@ -1,8 +1,9 @@
 .library {
   display: flex;
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 .album-cover {
   padding: 20px;
+  width: 500px;
 }
