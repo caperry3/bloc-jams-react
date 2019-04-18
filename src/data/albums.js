@@ -2,7 +2,7 @@ export default [{
   title: 'Contemplate',
   artist: 'Mark Isham, Franz Liszt, and Jules Massenet',
   releaseInfo: 'Music for contemplation',
-  albumCover: '/assets/images/album_covers/mountain-rise.jpg',
+  albumCover: '/assets/images/album_covers/snow-haven.jpg',
   slug: 'the-colors',
   songs: [
       { title: 'A Really Good Cloak', duration: '209', audioSrc: '/assets/music/A-Really-Good-Cloak.m4a', number: 1 },
@@ -13,7 +13,7 @@ export default [{
     title: 'Experience',
     artist: 'M83',
     releaseInfo: 'Music to prompt experiential thinking',
-    albumCover: '/assets/images/album_covers/hummingbird.jpg',
+    albumCover: '/assets/images/album_covers/rust-bucket.jpg',
     slug: 'the-telephone',
     songs: [
       { title: 'Another Wave from You', duration: '114', audioSrc: '/assets/music/Another-Wave-from-You.m4a', number: 1 },

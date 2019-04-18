@@ -17,10 +17,10 @@ class App extends Component {
         <footer>
           <nav className="nav-bar">
             <div className="main-page-link">
-              <Link to="/">MUSEK</Link>
+              <button className="button-large"><Link to="/">MUSEK</Link></button>
             </div>
             <div className="choose-muse-link">
-              <Link to="/library">choose muse</Link>
+              <button className="button-large"><Link to="/library">choose muse</Link></button>
             </div>
           </nav>
         </footer>

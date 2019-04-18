@@ -2,3 +2,22 @@
   font-family: 'Montserrat', sans-serif;
   color: grey;
 }
+
+.album-details {
+  text-align: left;
+  padding: 25px;
+  font-size: 15px;
+}
+
+#album-cover-art {
+  width: 800px;
+  border-color: grey;
+  border-width: 10px;
+  border-style: ridge;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+header {
+  color: black;
+}

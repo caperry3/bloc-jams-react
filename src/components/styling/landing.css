@@ -8,7 +8,7 @@
 
 }
 .muse-title {
-  font-size: 125px;
+  font-size: 120px;
 }
 .muse {
   text-align: center;
@@ -17,4 +17,11 @@
 .definition {
   text-align: center;
   color: grey;
+}
+
+body {
+  background-image: url('/assets/images/album_covers/hummingbird.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
