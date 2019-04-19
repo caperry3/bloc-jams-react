@@ -4,21 +4,21 @@
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
-
-
 }
 .muse-title {
   font-size: 120px;
   padding: 5px;
 }
 .muse {
-  text-align: left;
-  color: grey;
+  text-align: center;
+  color: black;
   padding: 10px;
+  font-size: 20px;
 }
 .definition {
-  text-align: left;
-  color: grey;
+  text-align: center;
+  font-size: 20px;
+  color: black;
   padding: 10px;
 }
 
